@@ -1,0 +1,1949 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACL Contabilidade | Contabilidade para Caruaru e Região | Soluções Contábeis</title>
+    <meta name="description" content="ACL Contabilidade - Há mais de 40 anos ajudando empreendedores de Caruaru. Contabilidade para MEI, ME, EPP. Abertura de empresa, notas fiscais, regularização fiscal.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset e configurações básicas */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #ffffff;
+            scroll-behavior: smooth;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* WhatsApp Fixo no Topo */
+        .whatsapp-header {
+            background: linear-gradient(135deg, #25D366, #1da851);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+        
+        .whatsapp-header a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: transform 0.3s;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 25px;
+        }
+        
+        .whatsapp-header a:hover {
+            transform: scale(1.05);
+            background: rgba(255,255,255,0.2);
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            color: white;
+            padding: 25px 0;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo img {
+            height: 80px;
+            width: auto;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+        }
+        
+        .logo-name {
+            text-align: left;
+        }
+        
+        .logo-name h1 {
+            font-size: 2rem;
+            line-height: 1.2;
+            color: white;
+            margin: 0;
+        }
+        
+        .logo-name .accent {
+            color: #d6ad5e;
+            font-weight: bold;
+        }
+        
+        .logo-name .tagline {
+            font-size: 1rem;
+            opacity: 0.9;
+            color: #d6ad5e;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+        
+        .header-contact {
+            text-align: right;
+            background: rgba(255,255,255,0.1);
+            padding: 15px 25px;
+            border-radius: 10px;
+            border-left: 4px solid #d6ad5e;
+        }
+        
+        .header-contact .phone {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #d6ad5e;
+            margin-bottom: 8px;
+        }
+        
+        .header-contact .hours {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 100px 0;
+            text-align: center;
+            background: linear-gradient(rgba(26, 32, 44, 0.9), rgba(45, 55, 72, 0.9)), 
+                        url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.4) 100%);
+        }
+        
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.4rem;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        /* Botão Principal */
+        .whatsapp-main {
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            background: linear-gradient(135deg, #25D366, #1da851);
+            color: white;
+            padding: 22px 50px;
+            font-size: 1.6rem;
+            font-weight: 700;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            border: none;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+        }
+        
+        .whatsapp-main:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+            background: linear-gradient(135deg, #1da851, #25D366);
+        }
+        
+        /* Botão Secundário */
+        .quiz-button-main {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: linear-gradient(135deg, #d6ad5e, #c69d4e);
+            color: white;
+            padding: 18px 40px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 6px 20px rgba(214, 173, 94, 0.4);
+            margin-left: 20px;
+        }
+        
+        .quiz-button-main:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(214, 173, 94, 0.6);
+            background: linear-gradient(135deg, #c69d4e, #d6ad5e);
+        }
+        
+        /* Sobre Nós */
+        .about-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: #1a202c;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .about-text p {
+            font-size: 1.2rem;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+        
+        .about-stats {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #d6ad5e;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Quiz Section */
+        .quiz-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .quiz-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #e9ecef;
+        }
+        
+        .quiz-header {
+            margin-bottom: 50px;
+        }
+        
+        .quiz-header h2 {
+            font-size: 2.5rem;
+            color: #1a202c;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .quiz-header p {
+            font-size: 1.3rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        .quiz-progress {
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            margin: 40px 0;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .quiz-progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #d6ad5e, #c69d4e);
+            width: 0%;
+            transition: width 0.5s ease;
+            border-radius: 4px;
+            position: relative;
+        }
+        
+        .quiz-step-count {
+            position: absolute;
+            right: 0;
+            top: -25px;
+            font-size: 0.9rem;
+            color: #666;
+            font-weight: 600;
+        }
+        
+        .quiz-step {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .quiz-step.active {
+            display: block;
+        }
+        
+        .quiz-question {
+            font-size: 1.8rem;
+            color: #1a202c;
+            margin-bottom: 40px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        
+        .quiz-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .quiz-option {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1.2rem;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .quiz-option:hover {
+            border-color: #d6ad5e;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(214, 173, 94, 0.15);
+        }
+        
+        .quiz-option.selected {
+            border-color: #d6ad5e;
+            background: linear-gradient(135deg, rgba(214, 173, 94, 0.05), rgba(198, 157, 78, 0.1));
+            box-shadow: 0 10px 25px rgba(214, 173, 94, 0.15);
+        }
+        
+        .quiz-option i {
+            color: #d6ad5e;
+            font-size: 2rem;
+            min-width: 40px;
+            text-align: center;
+        }
+        
+        .quiz-option span {
+            font-weight: 500;
+            flex: 1;
+        }
+        
+        .quiz-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+            gap: 20px;
+        }
+        
+        .quiz-button {
+            padding: 18px 45px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .quiz-button.prev {
+            background: #f8f9fa;
+            color: #666;
+            border: 2px solid #e9ecef;
+        }
+        
+        .quiz-button.prev:hover {
+            background: #e9ecef;
+            transform: translateY(-2px);
+        }
+        
+        .quiz-button.next {
+            background: linear-gradient(135deg, #1a202c, #2d3748);
+            color: white;
+        }
+        
+        .quiz-button.next:hover {
+            background: linear-gradient(135deg, #2d3748, #1a202c);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(26, 32, 44, 0.3);
+        }
+        
+        .quiz-button.submit {
+            background: linear-gradient(135deg, #d6ad5e, #c69d4e);
+            color: white;
+            width: 100%;
+            font-size: 1.3rem;
+        }
+        
+        .quiz-button.submit:hover {
+            background: linear-gradient(135deg, #c69d4e, #d6ad5e);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(214, 173, 94, 0.3);
+        }
+        
+        /* Resultado Final */
+        .quiz-result {
+            display: none;
+            animation: fadeIn 0.8s ease;
+            text-align: center;
+        }
+        
+        .quiz-result.active {
+            display: block;
+        }
+        
+        .result-icon {
+            font-size: 5rem;
+            color: #d6ad5e;
+            margin-bottom: 30px;
+            animation: bounce 1s infinite alternate;
+        }
+        
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+        
+        .result-title {
+            font-size: 2.5rem;
+            color: #1a202c;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        
+        .result-description {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 40px;
+            line-height: 1.8;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .result-summary {
+            background: rgba(214, 173, 94, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #d6ad5e;
+            margin: 40px 0;
+            text-align: left;
+        }
+        
+        .result-summary h3 {
+            color: #1a202c;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        
+        .result-summary ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .result-summary li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.1rem;
+        }
+        
+        .result-summary li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #d6ad5e;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .result-cta {
+            background: linear-gradient(135deg, #25D366, #1da851);
+            color: white;
+            padding: 25px 50px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            border-radius: 15px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            margin: 40px 0;
+            transition: all 0.3s;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+        }
+        
+        .result-cta:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.6);
+            background: linear-gradient(135deg, #1da851, #25D366);
+        }
+        
+        .result-note {
+            color: #666;
+            font-size: 1rem;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        /* Seção Google Meu Negócio */
+        .google-business {
+            padding: 80px 0;
+            background: white;
+            text-align: center;
+        }
+        
+        .google-business h2 {
+            color: #1a202c;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .business-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+            align-items: stretch;
+        }
+        
+        .business-info {
+            flex: 1;
+            min-width: 350px;
+            text-align: left;
+        }
+        
+        .business-info h3 {
+            color: #1a202c;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        .business-details {
+            background: #f8f9fa;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 1px solid #e9ecef;
+        }
+        
+        .business-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .business-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .business-item i {
+            color: #d6ad5e;
+            font-size: 1.5rem;
+            margin-top: 3px;
+            min-width: 24px;
+        }
+        
+        .business-item h4 {
+            color: #1a202c;
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+        
+        .google-map {
+            flex: 1;
+            min-width: 350px;
+            height: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid #e9ecef;
+        }
+        
+        .google-map iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        .google-reviews {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        
+        .review-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: white;
+            padding: 15px 25px;
+            border-radius: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border: 1px solid #e9ecef;
+            transition: transform 0.3s;
+        }
+        
+        .review-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        
+        .review-badge .stars {
+            color: #FFD700;
+            font-size: 1.1rem;
+        }
+        
+        .google-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: linear-gradient(135deg, #4285F4, #3367D6);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+        }
+        
+        .google-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(66, 133, 244, 0.3);
+            background: linear-gradient(135deg, #3367D6, #4285F4);
+        }
+        
+        /* Serviços */
+        .services {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .services h2 {
+            text-align: center;
+            color: #1a202c;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 35px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border-top: 5px solid #d6ad5e;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .service-card i {
+            font-size: 3.5rem;
+            color: #1a202c;
+            margin-bottom: 25px;
+            transition: color 0.3s;
+        }
+        
+        .service-card:hover i {
+            color: #d6ad5e;
+        }
+        
+        .service-card h3 {
+            color: #1a202c;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .service-card p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        /* Seção Rápida de Contato */
+        .quick-contact {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .quick-contact::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".05" fill="white"/></svg>');
+            background-size: cover;
+            opacity: 0.05;
+        }
+        
+        .quick-contact .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .quick-contact h2 {
+            margin-bottom: 40px;
+            color: #d6ad5e;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 35px;
+            margin: 60px 0;
+        }
+        
+        .contact-method {
+            padding: 40px 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            transition: all 0.3s;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .contact-method:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .contact-method i {
+            font-size: 3rem;
+            color: #d6ad5e;
+            margin-bottom: 25px;
+        }
+        
+        .contact-method h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+        
+        /* Botões de Ação Fixos */
+        .action-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .action-button {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .action-button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255,255,255,0.1);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .action-button:hover {
+            transform: scale(1.15);
+        }
+        
+        .action-button:hover::after {
+            opacity: 1;
+        }
+        
+        .action-button.whatsapp {
+            background: linear-gradient(135deg, #25D366, #1da851);
+        }
+        
+        .action-button.phone {
+            background: linear-gradient(135deg, #1a202c, #2d3748);
+        }
+        
+        .action-button.instagram {
+            background: linear-gradient(45deg, #405DE6, #833AB4, #C13584, #E1306C, #FD1D1D);
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #0f141e 0%, #1a202c 100%);
+            color: white;
+            padding: 60px 0 20px;
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #d6ad5e, #c69d4e);
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .footer-logo-container img {
+            height: 70px;
+            width: auto;
+            filter: brightness(0) invert(1);
+        }
+        
+        .footer-logo-name {
+            color: #d6ad5e;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        
+        .footer-column h3 {
+            color: #d6ad5e;
+            margin-bottom: 25px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: #d6ad5e;
+        }
+        
+        .footer-contact a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+        
+        .footer-contact a:hover {
+            color: #d6ad5e;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.95rem;
+            opacity: 0.8;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        /* Animações */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+        
+        /* Responsividade */
+        @media (max-width: 1024px) {
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .quiz-container {
+                padding: 40px 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 25px;
+            }
+            
+            .logo-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            
+            .logo-name {
+                text-align: center;
+            }
+            
+            .header-contact {
+                text-align: center;
+                width: 100%;
+            }
+            
+            .hero {
+                padding: 80px 0;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+                padding: 0 20px;
+            }
+            
+            .whatsapp-main, .quiz-button-main {
+                padding: 18px 35px;
+                font-size: 1.3rem;
+                margin: 10px 0;
+                display: block;
+                width: 100%;
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .about-stats {
+                justify-content: center;
+            }
+            
+            .quiz-container {
+                padding: 30px 20px;
+            }
+            
+            .quiz-header h2 {
+                font-size: 2rem;
+            }
+            
+            .quiz-question {
+                font-size: 1.5rem;
+            }
+            
+            .quiz-options {
+                grid-template-columns: 1fr;
+            }
+            
+            .quiz-option {
+                padding: 20px;
+                font-size: 1.1rem;
+            }
+            
+            .quiz-buttons {
+                flex-direction: column;
+            }
+            
+            .action-buttons {
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .action-button {
+                width: 55px;
+                height: 55px;
+                font-size: 1.6rem;
+            }
+            
+            .logo-name h1 {
+                font-size: 1.8rem;
+            }
+            
+            .business-container {
+                flex-direction: column;
+            }
+            
+            .business-info {
+                text-align: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo-name h1 {
+                font-size: 1.6rem;
+            }
+            
+            .quiz-container {
+                padding: 25px 15px;
+            }
+            
+            .quiz-header h2 {
+                font-size: 1.8rem;
+            }
+            
+            .quiz-question {
+                font-size: 1.3rem;
+            }
+            
+            .result-title {
+                font-size: 2rem;
+            }
+            
+            .result-cta {
+                padding: 20px 30px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Fixo no Topo -->
+    <div class="whatsapp-header pulse">
+        <a href="https://wa.me/558189832124?text=Olá!%20Gostaria%20de%20fazer%20uma%20consulta%20contábil%20com%20a%20ACL%20Contabilidade" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            FALE DIRETAMENTE COM O CONTADOR - (81) 8983-2124
+        </a>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="https://i.ibb.co/JwhPkKx7/ACL-CONTABILIDADE-ASSIST-NCIA-CONT-BIL-JUR-DICA-removebg-preview.png" alt="ACL Contabilidade">
+                    </div>
+                    <div class="logo-name">
+                        <h1>ACL <span class="accent">Contabilidade</span></h1>
+                        <div class="tagline">Soluções Contábeis Completas para Caruaru e Região</div>
+                    </div>
+                </div>
+                
+                <div class="header-contact">
+                    <div class="phone"><i class="fas fa-phone"></i> (81) 3723-4356</div>
+                    <div class="hours"><i class="far fa-clock"></i> Segunda a Sexta: 8h às 18h</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+        <div class="container">
+            <h2>Você está precisando de uma contabilidade de confiança?</h2>
+            <p>Há mais de 40 anos ajudamos empreendedores de Caruaru a manter tudo em dia e crescer com segurança.</p>
+            
+            <!-- Botão Principal para WhatsApp -->
+            <a href="https://wa.me/558189832124?text=Olá!%20Gostaria%20de%20fazer%20uma%20consulta%20contábil%20com%20a%20ACL%20Contabilidade" 
+               target="_blank" class="whatsapp-main">
+                <i class="fab fa-whatsapp"></i>
+                FALE AGORA COM O ESPECIALISTA
+            </a>
+            
+            <!-- Botão Secundário para o Quiz -->
+            <a href="javascript:void(0);" onclick="scrollToQuiz()" class="quiz-button-main" style="margin-top: 20px;">
+                <i class="fas fa-clipboard-list"></i>
+                FAÇA UMA ANÁLISE GRATUITA DO SEU NEGÓCIO
+            </a>
+            
+            <p style="margin-top: 30px; font-size: 1rem; opacity: 0.9;">
+                <i class="fas fa-bolt"></i> Resposta em menos de 5 minutos via WhatsApp
+            </p>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section class="about-section fade-in">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Há mais de 40 anos no mercado de Caruaru</h2>
+                    <p>Desde 1983, a ACL Contabilidade tem sido a parceira de confiança de centenas de empreendedores da região. Nosso compromisso é oferecer soluções contábeis completas e personalizadas para cada cliente.</p>
+                    <p>Com uma equipe especializada e em constante atualização, garantimos que sua empresa esteja sempre em conformidade com as exigências fiscais, enquanto você pode focar no que realmente importa: fazer seu negócio crescer.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">40+</div>
+                            <div class="stat-label">Anos de Experiência</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Clientes Atendidos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Satisfação</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1551836026-d5c2c5af78e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Escritório ACL Contabilidade">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section" id="quiz-section">
+        <div class="container">
+            <div class="quiz-container fade-in">
+                <div class="quiz-header">
+                    <h2>Análise Gratuita do Seu Negócio</h2>
+                    <p>Responda 4 perguntas rápidas e receba uma análise personalizada no WhatsApp com recomendações específicas para sua empresa em Caruaru</p>
+                </div>
+                
+                <div class="quiz-progress">
+                    <div class="quiz-progress-bar" id="quiz-progress-bar"></div>
+                    <div class="quiz-step-count" id="quiz-step-count">Pergunta 1 de 4</div>
+                </div>
+                
+                <!-- Passo 1 -->
+                <div class="quiz-step active" id="step-1">
+                    <div class="quiz-question">1. Qual é a sua situação atual?</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-value="ja-tenho" onclick="selectOption(this, 'step1', 'Já tenho empresa registrada')">
+                            <i class="fas fa-building"></i>
+                            <span>Já tenho empresa registrada</span>
+                        </div>
+                        <div class="quiz-option" data-value="quero-abrir" onclick="selectOption(this, 'step1', 'Quero abrir minha primeira empresa')">
+                            <i class="fas fa-plus-circle"></i>
+                            <span>Quero abrir minha primeira empresa</span>
+                        </div>
+                        <div class="quiz-option" data-value="sou-mei" onclick="selectOption(this, 'step1', 'Sou MEI (Microempreendedor Individual)')">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Sou MEI (Microempreendedor Individual)</span>
+                        </div>
+                        <div class="quiz-option" data-value="nao-sei" onclick="selectOption(this, 'step1', 'Quero saber se preciso formalizar meu negócio')">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Quero saber se preciso formalizar meu negócio</span>
+                        </div>
+                    </div>
+                    <div class="quiz-buttons">
+                        <button class="quiz-button next" onclick="nextQuizStep(2)">
+                            PRÓXIMA PERGUNTA <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Passo 2 -->
+                <div class="quiz-step" id="step-2">
+                    <div class="quiz-question">2. Qual é sua maior necessidade no momento?</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-value="regularizar" onclick="selectOption(this, 'step2', 'Regularizar situação fiscal e impostos')">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <span>Regularizar situação fiscal e impostos</span>
+                        </div>
+                        <div class="quiz-option" data-value="notas" onclick="selectOption(this, 'step2', 'Emitir notas fiscais eletrônicas')">
+                            <i class="fas fa-receipt"></i>
+                            <span>Emitir notas fiscais eletrônicas</span>
+                        </div>
+                        <div class="quiz-option" data-value="declaracao" onclick="selectOption(this, 'step2', 'Fazer declarações e obrigações mensais')">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Fazer declarações e obrigações mensais</span>
+                        </div>
+                        <div class="quiz-option" data-value="consultoria" onclick="selectOption(this, 'step2', 'Consultoria para economizar em impostos')">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Consultoria para economizar em impostos</span>
+                        </div>
+                    </div>
+                    <div class="quiz-buttons">
+                        <button class="quiz-button prev" onclick="prevQuizStep(1)">
+                            <i class="fas fa-arrow-left"></i> VOLTAR
+                        </button>
+                        <button class="quiz-button next" onclick="nextQuizStep(3)">
+                            PRÓXIMA PERGUNTA <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Passo 3 -->
+                <div class="quiz-step" id="step-3">
+                    <div class="quiz-question">3. Qual segmento melhor descreve seu negócio?</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-value="comercio" onclick="selectOption(this, 'step3', 'Comércio (loja, varejo, atacado)')">
+                            <i class="fas fa-store"></i>
+                            <span>Comércio (loja, varejo, atacado)</span>
+                        </div>
+                        <div class="quiz-option" data-value="servicos" onclick="selectOption(this, 'step3', 'Serviços (consultoria, profissional liberal)')">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Serviços (consultoria, profissional liberal)</span>
+                        </div>
+                        <div class="quiz-option" data-value="industria" onclick="selectOption(this, 'step3', 'Indústria ou produção')">
+                            <i class="fas fa-industry"></i>
+                            <span>Indústria ou produção</span>
+                        </div>
+                        <div class="quiz-option" data-value="outro" onclick="selectOption(this, 'step3', 'Outro tipo de atividade')">
+                            <i class="fas fa-ellipsis-h"></i>
+                            <span>Outro tipo de atividade</span>
+                        </div>
+                    </div>
+                    <div class="quiz-buttons">
+                        <button class="quiz-button prev" onclick="prevQuizStep(2)">
+                            <i class="fas fa-arrow-left"></i> VOLTAR
+                        </button>
+                        <button class="quiz-button next" onclick="nextQuizStep(4)">
+                            PRÓXIMA PERGUNTA <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Passo 4 -->
+                <div class="quiz-step" id="step-4">
+                    <div class="quiz-question">4. Qual seu faturamento mensal aproximado?</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-value="ate-5k" onclick="selectOption(this, 'step4', 'Até R$ 5.000 por mês')">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Até R$ 5.000 por mês</span>
+                        </div>
+                        <div class="quiz-option" data-value="5k-20k" onclick="selectOption(this, 'step4', 'Entre R$ 5.000 e R$ 20.000')">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Entre R$ 5.000 e R$ 20.000</span>
+                        </div>
+                        <div class="quiz-option" data-value="20k-100k" onclick="selectOption(this, 'step4', 'Entre R$ 20.000 e R$ 100.000')">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Entre R$ 20.000 e R$ 100.000</span>
+                        </div>
+                        <div class="quiz-option" data-value="acima-100k" onclick="selectOption(this, 'step4', 'Acima de R$ 100.000')">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Acima de R$ 100.000</span>
+                        </div>
+                    </div>
+                    <div class="quiz-buttons">
+                        <button class="quiz-button prev" onclick="prevQuizStep(3)">
+                            <i class="fas fa-arrow-left"></i> VOLTAR
+                        </button>
+                        <button class="quiz-button submit" onclick="showQuizResults()">
+                            <i class="fas fa-check-circle"></i> VER MINHA ANÁLISE COMPLETA
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Resultado Final -->
+                <div class="quiz-result" id="quiz-result">
+                    <div class="result-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h2 class="result-title">Análise Pronta! 🎯</h2>
+                    <p class="result-description">
+                        Com base nas suas respostas, já identificamos a <strong>solução ideal</strong> para seu negócio em Caruaru.<br><br>
+                        Clique no botão abaixo para receber sua análise completa diretamente no WhatsApp!
+                    </p>
+                    
+                    <div class="result-summary">
+                        <h3>📋 Resumo da sua análise:</h3>
+                        <ul id="result-summary-list">
+                            <!-- Preenchido pelo JavaScript -->
+                        </ul>
+                    </div>
+                    
+                    <!-- Link do WhatsApp que será gerado dinamicamente -->
+                    <a href="#" id="whatsapp-result-link" class="result-cta" target="_blank" onclick="sendWhatsAppMessage()">
+                        <i class="fab fa-whatsapp"></i>
+                        RECEBER ANÁLISE COMPLETA NO WHATSAPP
+                    </a>
+                    
+                    <div class="result-note">
+                        <div><i class="fas fa-lock"></i> Seus dados estão seguros. Não enviamos spam</div>
+                        <div><i class="fas fa-bolt"></i> Análise enviada instantaneamente</div>
+                        <div><i class="fas fa-user-tie"></i> Conversa direta com especialista</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Meu Negócio -->
+    <section class="google-business fade-in">
+        <div class="container">
+            <h2>Encontre-nos no Google</h2>
+            
+            <div class="business-container">
+                <div class="business-info">
+                    <h3>ACL Contabilidade</h3>
+                    <div class="business-details">
+                        <div class="business-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>Av. Agamenon Magalhães, 123 - Centro<br>Caruaru - PE, 55000-000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="business-item">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h4>Avaliação no Google</h4>
+                                <div class="review-badge">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </span>
+                                    <span>4.8 • 47 avaliações</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="business-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horário de Funcionamento</h4>
+                                <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h (com agendamento)</p>
+                            </div>
+                        </div>
+                        
+                        <a href="https://g.page/acl-contabilidade-caruaru?share" target="_blank" class="google-button">
+                            <i class="fab fa-google"></i>
+                            Ver no Google Maps
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.134216195189!2d-36.49232192501831!3d-8.462376491640005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a8bcf2e19d5e91%3A0x83e63a2bc2597f64!2sAv.%20Agamenon%20Magalh%C3%A3es%2C%20123%20-%20Centro%2C%20Caruaru%20-%20PE%2C%2055000-000!5e0!3m2!1spt-BR!2sbr!4v1705772046788!5m2!1spt-BR!2sbr" 
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            
+            <div class="google-reviews">
+                <div class="review-badge">
+                    <i class="fas fa-check-circle" style="color: #34A853;"></i>
+                    <span>Empresa verificada no Google</span>
+                </div>
+                
+                <div class="review-badge">
+                    <i class="fas fa-thumbs-up" style="color: #4285F4;"></i>
+                    <span>+100 clientes atendidos</span>
+                </div>
+                
+                <div class="review-badge">
+                    <i class="fas fa-award" style="color: #d6ad5e;"></i>
+                    <span>Especialista em contabilidade</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="services fade-in">
+        <div class="container">
+            <h2>Serviços Contábeis Especializados</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Abertura de Empresa</h3>
+                    <p>Abertura completa de MEI, ME, EPP e outros tipos societários. Todo processo facilitado com acompanhamento especializado.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h3>Nota Fiscal Eletrônica</h3>
+                    <p>Emissão de NF-e, NFC-e e NFS-e. Configuração completa, treinamento e suporte permanente para sua equipe.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Regularização Fiscal</h3>
+                    <p>Regularize sua situação com a Receita Federal, Prefeitura e demais órgãos fiscais. Evite multas e problemas.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Consultoria Tributária</h3>
+                    <p>Orientação sobre o melhor regime tributário para seu negócio economizar legalmente em impostos.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Departamento Pessoal</h3>
+                    <p>Folha de pagamento, férias, 13º salário, eSocial e todas as obrigações trabalhistas da sua empresa.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Assessoria Contábil</h3>
+                    <p>Acompanhamento mensal completo para sua empresa crescer com segurança jurídica e fiscal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Rápida de Contato -->
+    <section class="quick-contact">
+        <div class="container">
+            <h2>Fale Conosco Agora Mesmo</h2>
+            <p style="opacity: 0.95; max-width: 700px; margin: 0 auto 30px; font-size: 1.2rem;">
+                Escolha a forma que preferir falar conosco. Estamos prontos para ajudar seu negócio!
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-method fade-in">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telefone Fixo</h3>
+                    <p style="font-size: 1.5rem; font-weight: bold; margin: 15px 0;">(81) 3723-4356</p>
+                    <p>Segunda a sexta, 8h-18h</p>
+                    <a href="tel:+558137234356" style="color: #d6ad5e; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; margin-top: 20px;">
+                        <i class="fas fa-phone"></i> CLIQUE PARA LIGAR
+                    </a>
+                </div>
+                
+                <div class="contact-method fade-in">
+                    <i class="fas fa-envelope"></i>
+                    <h3>E-mail</h3>
+                    <p style="font-size: 1.1rem; font-weight: bold; margin: 15px 0; word-break: break-all;">erikaclcontabilidade@gmail.com</p>
+                    <p>Para documentos e consultas detalhadas</p>
+                    <a href="mailto:erikaclcontabilidade@gmail.com?subject=Consulta%20Contábil%20-%20Site" style="color: white; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; margin-top: 20px;">
+                        <i class="fas fa-envelope"></i> ENVIAR E-MAIL
+                    </a>
+                </div>
+                
+                <div class="contact-method fade-in">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p style="font-size: 1.2rem; font-weight: bold; margin: 15px 0;">@aclcontabilidade_</p>
+                    <p>Dicas diárias e novidades fiscais</p>
+                    <a href="https://instagram.com/aclcontabilidade_" target="_blank" style="color: white; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; margin-top: 20px;">
+                        <i class="fab fa-instagram"></i> SEGUIR NO INSTAGRAM
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo-container">
+                    <img src="https://i.ibb.co/JwhPkKx7/ACL-CONTABILIDADE-ASSIST-NCIA-CONT-BIL-JUR-DICA-removebg-preview.png" alt="ACL Contabilidade">
+                    <div class="footer-logo-name">ACL Contabilidade</div>
+                    <p style="opacity: 0.9; margin-top: 10px; font-size: 1.1rem;">
+                        Há mais de 40 anos ajudando empreendedores de Caruaru a crescer com segurança
+                    </p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contato Rápido</h3>
+                    <div class="footer-contact">
+                        <a href="https://wa.me/558189832124" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp: (81) 8983-2124
+                        </a>
+                        <a href="tel:+558137234356">
+                            <i class="fas fa-phone"></i> Telefone: (81) 3723-4356
+                        </a>
+                        <a href="mailto:erikaclcontabilidade@gmail.com">
+                            <i class="fas fa-envelope"></i> E-mail: erikaclcontabilidade@gmail.com
+                        </a>
+                        <a href="https://maps.app.goo.gl/" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i> Av. Agamenon Magalhães, 123 - Centro, Caruaru-PE
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Horário de Atendimento</h3>
+                    <p style="opacity: 0.9;">
+                        <strong>Segunda a Sexta:</strong><br>
+                        8:00 às 18:00
+                    </p>
+                    <p style="opacity: 0.9; margin-top: 15px;">
+                        <strong>Sábado:</strong><br>
+                        8:00 às 12:00 (com agendamento)
+                    </p>
+                    <p style="opacity: 0.9; margin-top: 15px;">
+                        <strong>Atendimento Emergencial:</strong><br>
+                        WhatsApp 24h
+                    </p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Nossos Serviços</h3>
+                    <p style="opacity: 0.9;">
+                        • Abertura de empresas<br>
+                        • Contabilidade para MEI<br>
+                        • Contabilidade para ME/EPP<br>
+                        • Regularização fiscal<br>
+                        • Emissão de notas fiscais<br>
+                        • Consultoria tributária<br>
+                        • Departamento pessoal<br>
+                        • Assessoria contábil completa
+                    </p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 ACL Contabilidade. Todos os direitos reservados.</p>
+                <p style="margin-top: 10px;">Há mais de 40 anos atendendo empreendedores de Caruaru e região com excelência e compromisso</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botões de Ação Fixos -->
+    <div class="action-buttons">
+        <a href="https://instagram.com/aclcontabilidade_" target="_blank" class="action-button instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="tel:+558137234356" class="action-button phone">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/558189832124?text=Olá!%20Gostaria%20de%20fazer%20uma%20consulta%20contábil%20com%20a%20ACL%20Contabilidade" 
+           target="_blank" class="action-button whatsapp pulse">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        // Variáveis globais do quiz
+        let quizData = {
+            step1: null,
+            step2: null,
+            step3: null,
+            step4: null
+        };
+        
+        let currentQuizStep = 1;
+        const totalQuizSteps = 4;
+        
+        // Função para rolar até o quiz (para o botão secundário)
+        function scrollToQuiz() {
+            document.getElementById('quiz-section').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
+        // Função para selecionar uma opção
+        function selectOption(element, step, text) {
+            // Remover seleção de todas as opções deste passo
+            const stepElement = element.closest('.quiz-step');
+            const options = stepElement.querySelectorAll('.quiz-option');
+            options.forEach(opt => opt.classList.remove('selected'));
+            
+            // Selecionar esta opção
+            element.classList.add('selected');
+            
+            // Salvar dados
+            quizData[step] = {
+                value: element.getAttribute('data-value'),
+                text: text
+            };
+        }
+        
+        // Função para ir para o próximo passo do quiz
+        function nextQuizStep(step) {
+            // Verificar se selecionou uma opção
+            const currentStepAnswers = quizData[`step${currentQuizStep}`];
+            if (!currentStepAnswers) {
+                alert('Por favor, selecione uma opção antes de continuar.');
+                return;
+            }
+            
+            // Esconder passo atual
+            document.getElementById(`step-${currentQuizStep}`).classList.remove('active');
+            
+            // Mostrar próximo passo
+            document.getElementById(`step-${step}`).classList.add('active');
+            currentQuizStep = step;
+            
+            // Atualizar barra de progresso
+            updateQuizProgress();
+        }
+        
+        // Função para voltar ao passo anterior
+        function prevQuizStep(step) {
+            // Esconder passo atual
+            document.getElementById(`step-${currentQuizStep}`).classList.remove('active');
+            
+            // Mostrar passo anterior
+            document.getElementById(`step-${step}`).classList.add('active');
+            currentQuizStep = step;
+            
+            // Atualizar barra de progresso
+            updateQuizProgress();
+        }
+        
+        // Atualizar barra de progresso do quiz
+        function updateQuizProgress() {
+            const progress = ((currentQuizStep - 1) / totalQuizSteps) * 100;
+            document.getElementById('quiz-progress-bar').style.width = `${progress}%`;
+            document.getElementById('quiz-step-count').textContent = `Pergunta ${currentQuizStep} de ${totalQuizSteps}`;
+        }
+        
+        // Mostrar resultados do quiz
+        function showQuizResults() {
+            // Verificar se todas as perguntas foram respondidas
+            const allAnswered = quizData.step1 && quizData.step2 && quizData.step3 && quizData.step4;
+            
+            if (!allAnswered) {
+                alert('Por favor, responda todas as perguntas antes de ver sua análise.');
+                return;
+            }
+            
+            // Esconder etapa atual
+            document.getElementById(`step-${currentQuizStep}`).classList.remove('active');
+            
+            // Mostrar resultados
+            document.getElementById('quiz-result').classList.add('active');
+            
+            // Atualizar barra de progresso para 100%
+            document.getElementById('quiz-progress-bar').style.width = '100%';
+            
+            // Atualizar resumo
+            updateResultSummary();
+            
+            // Gerar link do WhatsApp
+            generateWhatsAppLink();
+            
+            // Scroll suave para resultados
+            document.getElementById('quiz-result').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
+        // Atualizar resumo dos resultados
+        function updateResultSummary() {
+            const summaryList = document.getElementById('result-summary-list');
+            summaryList.innerHTML = '';
+            
+            const summaries = [
+                `📊 Situação atual: ${quizData.step1.text}`,
+                `🎯 Principal necessidade: ${quizData.step2.text}`,
+                `🏢 Segmento do negócio: ${quizData.step3.text}`,
+                `💰 Faturamento mensal: ${quizData.step4.text}`
+            ];
+            
+            summaries.forEach(summary => {
+                const li = document.createElement('li');
+                li.textContent = summary;
+                summaryList.appendChild(li);
+            });
+        }
+        
+        // Gerar link do WhatsApp com mensagem formatada
+        function generateWhatsAppLink() {
+            const phoneNumber = '558189832124';
+            
+            // Determinar serviço recomendado
+            let recommendedService = '';
+            let serviceDescription = '';
+            
+            if (quizData.step1.value === 'quero-abrir' || quizData.step1.value === 'nao-sei') {
+                recommendedService = 'ABERTURA DE EMPRESA';
+                serviceDescription = 'Perfeito para formalizar seu negócio com segurança jurídica e fiscal';
+            } else if (quizData.step1.value === 'sou-mei') {
+                recommendedService = 'CONTABILIDADE PARA MEI';
+                serviceDescription = 'Atendimento especializado para Microempreendedor Individual';
+            } else if (quizData.step2.value === 'regularizar') {
+                recommendedService = 'REGULARIZAÇÃO FISCAL';
+                serviceDescription = 'Importante para evitar multas e problemas com a Receita Federal';
+            } else if (quizData.step2.value === 'consultoria') {
+                recommendedService = 'CONSULTORIA TRIBUTÁRIA';
+                serviceDescription = 'Estratégico para economizar legalmente em impostos';
+            } else {
+                recommendedService = 'CONTABILIDADE COMPLETA';
+                serviceDescription = 'Solução completa para gestão fiscal do seu negócio';
+            }
+            
+            // Criar mensagem para WhatsApp
+            let message = `*🏢 ANÁLISE CONTÁBIL - ACL CONTABILIDADE*%0A%0A`;
+            message += `Olá! Acabei de completar a análise do meu negócio no site e gostaria de mais informações.%0A%0A`;
+            message += `*📋 MEU PERFIL:*%0A`;
+            message += `• ${quizData.step1.text}%0A`;
+            message += `• ${quizData.step2.text}%0A`;
+            message += `• ${quizData.step3.text}%0A`;
+            message += `• ${quizData.step4.text}%0A%0A`;
+            message += `*🎯 SERVIÇO RECOMENDADO:*%0A`;
+            message += `${recommendedService}%0A`;
+            message += `_${serviceDescription}_%0A%0A`;
+            message += `Podemos conversar sobre uma solução personalizada?`;
+            
+            // Atualizar link
+            const whatsappLink = document.getElementById('whatsapp-result-link');
+            whatsappLink.href = `https://wa.me/${phoneNumber}?text=${message}`;
+        }
+        
+        // Função para enviar mensagem do WhatsApp
+        function sendWhatsAppMessage() {
+            // O link já está configurado, apenas garantir que abre em nova aba
+            const link = document.getElementById('whatsapp-result-link');
+            link.target = '_blank';
+            
+            // Criar efeito de confete
+            createConfetti();
+        }
+        
+        // Efeito de confete
+        function createConfetti() {
+            const colors = ['#d6ad5e', '#25D366', '#1a202c', '#ffffff'];
+            const confettiCount = 100;
+            
+            for (let i = 0; i < confettiCount; i++) {
+                const confetti = document.createElement('div');
+                confetti.style.cssText = `
+                    position: fixed;
+                    width: 10px;
+                    height: 10px;
+                    background: ${colors[Math.floor(Math.random() * colors.length)]};
+                    border-radius: ${Math.random() > 0.5 ? '50%' : '0'};
+                    top: -20px;
+                    left: ${Math.random() * 100}vw;
+                    opacity: ${Math.random() * 0.5 + 0.5};
+                    z-index: 9998;
+                    pointer-events: none;
+                `;
+                
+                document.body.appendChild(confetti);
+                
+                // Animar confetti
+                const animation = confetti.animate([
+                    { transform: 'translateY(0) rotate(0deg)', opacity: 1 },
+                    { transform: `translateY(${window.innerHeight + 20}px) rotate(${Math.random() * 360}deg)`, opacity: 0 }
+                ], {
+                    duration: Math.random() * 3000 + 2000,
+                    easing: 'cubic-bezier(0.215, 0.610, 0.355, 1)'
+                });
+                
+                // Remover após animação
+                animation.onfinish = () => document.body.removeChild(confetti);
+            }
+        }
+        
+        // Inicializar quando a página carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animar elementos ao rolar
+            const fadeElements = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'fadeIn 0.8s ease-out forwards';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Efeito de digitação no título do hero
+            const heroTitle = document.querySelector('.hero h2');
+            if (heroTitle) {
+                const originalText = heroTitle.textContent;
+                heroTitle.textContent = '';
+                
+                let i = 0;
+                function typeWriter() {
+                    if (i < originalText.length) {
+                        heroTitle.textContent += originalText.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, 40);
+                    }
+                }
+                
+                setTimeout(typeWriter, 1000);
+            }
+            
+            // Atualizar ano do copyright
+            const yearElement = document.querySelector('.copyright');
+            if (yearElement) {
+                const currentYear = new Date().getFullYear();
+                yearElement.innerHTML = yearElement.innerHTML.replace('2023', currentYear);
+            }
+        });
+    </script>
+</body>
+</html>
